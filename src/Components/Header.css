@@ -1,0 +1,14 @@
+/* custom.css */
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+
+.btn-info:active,
+.btn-info:focus,
+.btn-info:hover {
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important;
+}
