@@ -46,10 +46,10 @@ function Header() {
                 </NavLink>
               </Nav.Link>
 
-              <Button variant="success" className="fs-5 mx-3 rounded-5">
+              <Button variant="success" className="fs-4 mx-3 rounded-5">
                 Sign-In
               </Button>
-              <Button variant="info" className="fs-5 rounded-5">
+              <Button variant="info" className="fs-4 rounded-5">
                 Sign-Up
               </Button>
             </Nav>
