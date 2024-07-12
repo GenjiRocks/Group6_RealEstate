@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from '../Components/Header'
 
 function Pro_listing() {
   return (
-    <div>Pro_listing</div>
+    <>
+    <Header/>
+    propertylisting
+    
+    </>
   )
 }
 

@@ -1,0 +1,27 @@
+.nav-link {
+    position: relative;
+    color: inherit; /* Ensures the color inheritance */
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 2px;
+    right: 0;
+    background: rgb(24, 188, 156);
+    transition: width 0.3s ease, right 0.3s ease;
+  }
+  
+  
+  .nav-link.active::after {
+    width: 100%;
+    right: 0;
+  }
+  
+  /* Ensures the active link color is consistent */
+  .active {
+    color: rgb(24, 188, 156) !important;
+  }
