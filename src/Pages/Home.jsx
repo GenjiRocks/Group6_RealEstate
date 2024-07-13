@@ -1,8 +1,10 @@
 import React from 'react'
+import Header from '../Components/Header'
 
 function Home() {
   return (
     <>
+    <Header/>
     <div className="container">
     <div className="row w-100 p-4">
     <div className='col-md-9'>
@@ -17,8 +19,9 @@ function Home() {
    
     </div>
     </div>
-    
-    </>
+    <div>
+      Home</div>
+      </>
   )
 }
 
