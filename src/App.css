@@ -21,7 +21,9 @@
     right: 0;
   }
   
-  /* Ensures the active link color is consistent */
   .active {
     color: rgb(24, 188, 156) !important;
   }
+
+
+ 
