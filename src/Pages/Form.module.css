@@ -1,21 +1,17 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Form.module.css */
+/* 
 body {
   background-color: #c9d6ff;
   background: linear-gradient(to right, #e2e2e2, #c9d6ff);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   height: 100vh;
-}
+  margin: 0;
+  font-family: Arial, sans-serif;
+} */
 
-.container {
+.formContainer {
   background-color: #fff;
   border-radius: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -24,27 +20,31 @@ body {
   width: 768px;
   max-width: 100%;
   min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container p {
+.formContainer p {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.3px;
   margin: 20px 0;
 }
 
-.container span {
+.formContainer span {
   font-size: 12px;
 }
 
-.container a {
+.formContainer a {
   color: #333;
   font-size: 13px;
   text-decoration: none;
   margin: 15px 0 10px;
 }
 
-.container button {
+.formContainer button {
   background-color: #512da8;
   color: #fff;
   font-size: 12px;
@@ -58,12 +58,12 @@ body {
   cursor: pointer;
 }
 
-.container button.hidden {
+.formContainer button.hidden {
   background-color: transparent;
   border-color: #fff;
 }
 
-.container form {
+.formContainer form {
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -73,7 +73,7 @@ body {
   height: 100%;
 }
 
-.container input {
+.formContainer input {
   background-color: #eee;
   border: none;
   margin: 8px 0;
@@ -84,31 +84,31 @@ body {
   outline: none;
 }
 
-.form-container {
+.formInnerContainer {
   position: absolute;
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
 }
 
-.sign-in {
+.signIn {
   left: 0;
   width: 50%;
   z-index: 2;
 }
 
-.container.active .sign-in {
+.containerActive .signIn {
   transform: translateX(100%);
 }
 
-.sign-up {
+.signUp {
   left: 0;
   width: 50%;
   opacity: 0;
   z-index: 1;
 }
 
-.container.active .sign-up {
+.containerActive .signUp {
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
@@ -126,11 +126,11 @@ body {
   }
 }
 
-.social-icons {
+.socialIcons {
   margin: 20px 0;
 }
 
-.social-icons a {
+.socialIcons a {
   border: 1px solid #ccc;
   border-radius: 20%;
   display: inline-flex;
@@ -141,7 +141,7 @@ body {
   height: 40px;
 }
 
-.toggle-container {
+.toggleContainer {
   position: absolute;
   top: 0;
   left: 50%;
@@ -149,13 +149,13 @@ body {
   height: 100%;
   overflow: hidden;
   transition: all 0.6s ease-in-out;
-  border-radius: 200px  0 200px;
+  border-radius: 200px 0 200px;
   z-index: 1000;
 }
 
-.container.active .toggle-container {
+.containerActive .toggleContainer {
   transform: translateX(-100%);
-  border-radius: 0 200px 0px ;
+  border-radius: 0 200px 0 0;
 }
 
 .toggle {
@@ -171,11 +171,11 @@ body {
   transition: all 0.6s ease-in-out;
 }
 
-.container.active .toggle {
+.containerActive .toggle {
   transform: translateX(50%);
 }
 
-.toggle-panel {
+.togglePanel {
   position: absolute;
   top: 0;
   display: flex;
@@ -188,19 +188,19 @@ body {
   width: 50%;
 }
 
-.toggle-left {
+.toggleLeft {
   transform: translateX(-200%);
 }
 
-.container.active .toggle-left {
+.containerActive .toggleLeft {
   transform: translateX(0);
 }
 
-.toggle-right {
+.toggleRight {
   right: 0;
   transform: translateX(0);
 }
 
-.container.active .toggle-right {
+.containerActive .toggleRight {
   transform: translateX(200%);
 }
