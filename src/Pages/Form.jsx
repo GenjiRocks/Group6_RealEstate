@@ -21,7 +21,7 @@ function Form() {
     return () => {
       registerBtn.removeEventListener('click', handleRegisterClick);
       loginBtn.removeEventListener('click', handleLoginClick);
-    };
+    };n
   }, []);
 
   return (

@@ -47,12 +47,16 @@ function Header() {
                 </NavLink>
               </Nav.Link>
 
-              <Button variant="success" className="fs-4 mx-3 rounded-5">
-                Sign-In
-              </Button>
-              <Button variant="info" className="fs-4 rounded-5">
-                Sign-Up
-              </Button>
+              <NavLink to="/signin" style={{ textDecoration: 'none' }}>
+                <Button variant="success" className="mt-2 ms-2 fs-4 rounded-5">
+                  Sign-In
+                </Button>
+              </NavLink>
+              <NavLink to="/signup" style={{ textDecoration: 'none' }}>
+                <Button variant="info" className="mt-2 ms-2  fs-4 rounded-5">
+                  Sign-Up
+                </Button>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

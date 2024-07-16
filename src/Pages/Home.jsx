@@ -3,6 +3,7 @@ import Header from '../Components/Header'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight'
 import { faHeart, faShare, faChevronRight, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../Components/Footer';
 
 
 function Home() {
@@ -68,7 +69,7 @@ function Home() {
         </div>
         <div className="col-md-2"></div>
       </div>
-
+    <Footer/>
     </>
   )
 }
