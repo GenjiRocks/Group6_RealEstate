@@ -45,7 +45,7 @@ body {
 }
 
 .formContainer button {
-  background-color: #512da8;
+  background-color: #18BC9C;
   color: #fff;
   font-size: 12px;
   padding: 10px 45px;
@@ -155,13 +155,13 @@ body {
 
 .containerActive .toggleContainer {
   transform: translateX(-100%);
-  border-radius: 0 200px 0 0;
+  border-radius: 0 200px 0 ;
 }
 
 .toggle {
-  background-color: #512da8;
+  background-color: #18BC9C;
   height: 100%;
-  background: linear-gradient(to right, #5c6bc0, #d820c6);
+  background: linear-gradient(to right, #18BC9C, #18BC9C);
   color: #fff;
   position: relative;
   left: -100%;
