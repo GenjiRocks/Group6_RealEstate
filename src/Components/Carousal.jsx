@@ -16,22 +16,22 @@ function Carousal() {
                 <img
                   src="https://shasonline.com/blog_images/ebece16ddc4cfec9ddd941b7c4fa7c57.jpg"alt="Property 1"style={{ maxWidth: '100%', maxHeight: '300px', marginBottom: '10px' }}
                 />
-                <p className="legend" style={{ width: '200px', marginTop: '5px', fontSize: '14px' }}>Property 1 details</p>
+                <p className="legend bg-success" style={{ width: '200px', marginTop: '5px', fontSize: '14px' }}>Property 1 details</p>
               </div>
               <div>
                 <img
                   src="https://pbs.twimg.com/media/ExdzLZeVIAQrGSa?format=jpg&name=900x900" alt="Property 2"style={{ maxWidth: '100%', maxHeight: '300px', marginBottom: '10px' }} />
-                <p className="legend" style={{ width: '200px', marginTop: '5px', fontSize: '14px' }}>Property 2 details</p>
+                <p className="legend bg-success" style={{ width: '200px', marginTop: '5px', fontSize: '14px' }}>Property 2 details</p>
               </div>
               <div>
                 <img
                   src="https://shasonline.com/blog_images/ebece16ddc4cfec9ddd941b7c4fa7c57.jpg" alt="Property 3" style={{ maxWidth: '100%', maxHeight: '300px', marginBottom: '10px' }} />
-                <p className="legend" style={{ width: '200px', marginTop: '5px', fontSize: '14px' }}>Property 3 details</p>
+                <p className="legend bg-success" style={{ width: '200px', marginTop: '5px', fontSize: '14px' }}>Property 3 details</p>
               </div>
               <div>
                 <img
                   src="https://pbs.twimg.com/media/ExdzLZeVIAQrGSa?format=jpg&name=900x900"alt="Property 4"style={{ maxWidth: '100%', maxHeight: '300px', marginBottom: '10px' }}/>
-                <p className="legend" style={{ width: '200px', marginTop: '5px', fontSize: '14px' }}>Property 4 details</p>
+                <p className="legend bg-success" style={{ width: '200px', marginTop: '5px', fontSize: '14px' }}>Property 4 details</p>
               </div>
             </Carousel>
           </div>
