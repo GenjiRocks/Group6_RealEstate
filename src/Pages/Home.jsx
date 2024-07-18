@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <Header />
-      <div className="container-fluid mb-4">
+      <div className="container-fluid mb-4"style={{backgroundColor:'#98e6ce'}}>
         <div className="row w-100 p-5">
           <div className='col-md-10'>
             <h2 style={{ textDecoration: 'none' }}>Best Properties For Sale In Kerala</h2>
