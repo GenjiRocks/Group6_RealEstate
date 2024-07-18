@@ -1,7 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../Pages/Form.module.css';
-
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 function Form() {
+
+  const [userDetails , setUserDetails] = useState({
+    username:'',
+    email:'',
+    password:''
+    
+  })
+  console.log(userDetails);
+
+
   useEffect(() => {
     const container = document.getElementById('container');
     const registerBtn = document.getElementById('register');
@@ -25,7 +37,7 @@ function Form() {
   }, []);
 
   return (
-
+    <>
     <div style={{backgroundColor: '#c9d6ff',background:'linear-gradient(to right, #e2e2e2, #c9d6ff)',display:'flex',
       justifyContent:'center', alignItems:'center', height:'100vh', margin:'0'}}>
     <div className={styles.formContainer} id="container">
@@ -33,9 +45,17 @@ function Form() {
         <form>
           <h2>Create Account</h2>
           <span>or use your email for registration</span>
-          <input type="text" placeholder="UserName" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input type="text" placeholder="UserName" onChange={(e)=>
+            setUserDetails({...userDetails,username:e.target.value})
+          } />
+          <input type="email" placeholder="Email" onChange={(e)=>
+            setUserDetails({...userDetails,email:e.target.value})
+          }
+           />
+          <input type="password" placeholder="Password"  onChange={(e)=>
+            setUserDetails({...userDetails,password:e.target.value})
+          }
+          />
           <button type="button">Sign Up</button>
         </form>
       </div>
@@ -63,9 +83,16 @@ function Form() {
           </div>
         </div>
       </div>
-    </div>
+
     </div>
     
+    </div>
+    <div style={{marginTop:'-80px' }} className='d-flex align-items-center justify-content-center'>
+            <h4> <Link to={'/'} style={{textDecoration:'none'}}><FontAwesomeIcon icon={faArrowLeft}  className='me-1'/> Back to home</Link></h4>
+      </div>
+    
+
+    </>
   );
 }
 
