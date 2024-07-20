@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 function Form() {
 
+
   const [userDetails , setUserDetails] = useState({
     username:'',
     email:'',
@@ -12,6 +13,34 @@ function Form() {
     
   })
   console.log(userDetails);
+  
+  //Signup button onClick
+
+  const handleSignup =(e)=>{
+    const{ username,email,password}=userDetails
+    if(!username || !email || !password){
+      alert("Please fill the form completely")
+    }
+    else{
+      alert("Sign-up Successfully")
+      // navigate('/login'); 
+    }
+  }
+
+  // Signin button Onclick
+  // const navigate = useNavigate()
+
+  const handleSignin =(e)=>{
+    const{email,password}=userDetails
+    if(!email || !password){
+      alert("Please fill the form completely")
+
+    }
+    else{
+      alert("Sign-in Successfully")
+      // navigate('/'); 
+    }
+  }
 
 
   useEffect(() => {
@@ -56,17 +85,21 @@ function Form() {
             setUserDetails({...userDetails,password:e.target.value})
           }
           />
-          <button type="button">Sign Up</button>
+          <button type="button" onClick={handleSignup}>Sign Up</button>
         </form>
       </div>
       <div className={`${styles.formInnerContainer} ${styles.signIn}`}>
         <form>
           <h1>Sign In</h1>
           <span>or use your email password</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input type="email" placeholder="Email" onChange={(e)=>
+            setUserDetails({...userDetails,email:e.target.value})
+          } />
+          <input type="password" placeholder="Password" onChange={(e)=>
+            setUserDetails({...userDetails,password:e.target.value})
+          } />
           <a href="#">Forget Your Password?</a>
-          <button type="button">Sign In</button>
+          <button type="button" onClick={handleSignin}>Sign In</button>
         </form>
       </div>
       <div className={styles.toggleContainer}>
