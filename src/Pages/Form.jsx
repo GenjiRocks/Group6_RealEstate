@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../Pages/Form.module.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 function Form() {
@@ -28,7 +28,7 @@ function Form() {
   }
 
   // Signin button Onclick
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   const handleSignin =(e)=>{
     const{email,password}=userDetails
@@ -37,8 +37,8 @@ function Form() {
 
     }
     else{
-      // alert("Sign-up Successfully")
-      navigate('/'); 
+      alert("Sign-in Successfully")
+      // navigate('/'); 
     }
   }
 
