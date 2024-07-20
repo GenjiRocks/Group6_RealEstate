@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../Pages/Form.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 function Form() {
+
 
   const [userDetails , setUserDetails] = useState({
     username:'',
@@ -12,6 +13,20 @@ function Form() {
     
   })
   console.log(userDetails);
+  
+  //Signup button onClick
+  // const navigate = useNavigate()
+
+  const handleSignup =(e)=>{
+    const{ username,email,password}=userDetails
+    if(!username || !email || !password){
+      alert("Please fill the form completely")
+    }
+    else{
+      alert("Sign-up Successfully")
+      // navigate('/login'); 
+    }
+  }
 
 
   useEffect(() => {
@@ -56,7 +71,7 @@ function Form() {
             setUserDetails({...userDetails,password:e.target.value})
           }
           />
-          <button type="button">Sign Up</button>
+          <button type="button" onClick={handleSignup}>Sign Up</button>
         </form>
       </div>
       <div className={`${styles.formInnerContainer} ${styles.signIn}`}>
