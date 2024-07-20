@@ -2,21 +2,23 @@ import React from 'react'
 import Header from '../Components/Header'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight'
-import { faHeart, faShare, faChevronRight, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
+import { faShare } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../Components/Footer';
 import Carousal from '../Components/Carousal';
+import { Button } from 'react-bootstrap';
+
 
 function Home() {
   return (
     <>
       <Header />
-      <div className="container-fluid mb-4"style={{backgroundColor:'#98e6ce'}}>
-        <div className="row w-100 p-5">
+      <div className="container-fluid mb-4">
+        <div className="row w-100 p-5 ">
           <div className='col-md-10'>
             <h2 style={{ textDecoration: 'none' }}>Best Properties For Sale In Kerala</h2>
             <span className='heading-divider'></span>
             <p className='mb-6 mt-3' style={{ textDecoration: 'none' }}>
-              "Here you can find properties for sale in kerala,that include apartments,flats,office spaces,and houses."
+              "Here you can find properties for sale in kerala,that include apartments,flats,office spaces and houses."
             </p>
           </div>
 
@@ -27,10 +29,10 @@ function Home() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row mt-5">
           <div className="col-md-2"></div>
 
-          <div className="col-md-8">
+          <div className="col-md-8 p-2 shadow rounded mb-4">
             <div className="card" >
               <div className="row">
                 <div className="col-md-4">
@@ -44,20 +46,8 @@ function Home() {
                     <p className="card-text text-primary fs-5"> &#x20B9; 1.38 Cr</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div>
-                        <button className="btn btn-outline-secondary btn-sm me-2 text-primary">
-                          <FontAwesomeIcon icon={faHeart} style={{ color: 'purple' }} /> Like
-                        </button>
-                        <button className="btn btn-outline-secondary btn-sm text-primary">
-                          <FontAwesomeIcon icon={faShare} style={{ color: 'blue' }} /> Share
-                        </button>
-                      </div>
-                      <div>
-                        <button className="btn btn-outline-secondary text-primary btn-sm me-2">
-                          <FontAwesomeIcon icon={faEllipsisH} />
-                        </button>
-                        <button className="btn btn-outline-secondary btn-sm text-primary">
-                          Details <FontAwesomeIcon icon={faChevronRight} className="ms-1" />
-                        </button>
+                        <Button variant="success">Details</Button>
+                        <Button className='ms-2' variant="info">Share <FontAwesomeIcon icon={faShare} style={{ color: 'white' }} /></Button>
                       </div>
                     </div>
                   </div>
@@ -67,7 +57,7 @@ function Home() {
           </div>
           <div className="col-md-2"></div>
         </div>
-       <Carousal/>
+        <Carousal />
       </div>
       <Footer />
     </>

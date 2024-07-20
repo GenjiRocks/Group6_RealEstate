@@ -9,7 +9,7 @@ function Carousal() {
 
       <div className="container mt-5">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 p-2"style={{boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)'}}>
             <Carousel showArrows={true} infiniteLoop={true}>
               <div>
                 <img
@@ -34,7 +34,7 @@ function Carousal() {
               </div>
             </Carousel>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 p-2 mt-2">
 
             <h3>Why We're the Best Choice</h3>
             <p>We are dedicated to offering the finest properties across the picturesque state of Kerala. Whether you are seeking a tranquil beachfront villa, a modern apartment in the bustling city, or a serene countryside home, our curated selection ensures that you find the perfect property to suit your needs. Our extensive network and deep understanding of the local market enable us to provide exclusive listings and the best deals, ensuring a seamless and satisfying property search experience. Discover your dream home in Kerala with us, where quality and customer satisfaction are our top priorities.</p>
@@ -44,7 +44,6 @@ function Carousal() {
         </div>
       </div>
       <hr className="dark-line" />
-
     </>
   )
 }
