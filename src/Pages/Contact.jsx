@@ -115,8 +115,9 @@ function Contact() {
       <div style={columnStyle}>
         <h2 style={headingStyle}>Love to hear from you, Get in touch 👋</h2>
         <p style={paragraphStyle}>
-          Clarity gives you the blocks & components you need to create a truly professional website,
-          landing page or admin panel for your SaaS and gives the blocks.
+            HomeFinder gives you the tools and features you need to create a professional real estate platform.
+            Whether you're a buyer or seller, our platform provides a seamless experience for property discovery,
+            management, and communication.
         </p>
         <div style={cardStyle}>
           <div style={reviewStyle}>
