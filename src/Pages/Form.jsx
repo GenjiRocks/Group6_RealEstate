@@ -15,7 +15,6 @@ function Form() {
   console.log(userDetails);
   
   //Signup button onClick
-  // const navigate = useNavigate()
 
   const handleSignup =(e)=>{
     const{ username,email,password}=userDetails
@@ -25,6 +24,21 @@ function Form() {
     else{
       alert("Sign-up Successfully")
       // navigate('/login'); 
+    }
+  }
+
+  // Signin button Onclick
+  const navigate = useNavigate()
+
+  const handleSignin =(e)=>{
+    const{email,password}=userDetails
+    if(!email || !password){
+      alert("Please fill the form completely")
+
+    }
+    else{
+      // alert("Sign-up Successfully")
+      navigate('/'); 
     }
   }
 
@@ -78,10 +92,14 @@ function Form() {
         <form>
           <h1>Sign In</h1>
           <span>or use your email password</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input type="email" placeholder="Email" onChange={(e)=>
+            setUserDetails({...userDetails,email:e.target.value})
+          } />
+          <input type="password" placeholder="Password" onChange={(e)=>
+            setUserDetails({...userDetails,password:e.target.value})
+          } />
           <a href="#">Forget Your Password?</a>
-          <button type="button">Sign In</button>
+          <button type="button" onClick={handleSignin}>Sign In</button>
         </form>
       </div>
       <div className={styles.toggleContainer}>
