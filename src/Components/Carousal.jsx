@@ -24,12 +24,12 @@ function Carousal() {
               </div>
               <div>
                 <img
-                  src="https://shasonline.com/blog_images/ebece16ddc4cfec9ddd941b7c4fa7c57.jpg" alt="Property 3" style={{ maxWidth: '100%', maxHeight: '300px', marginBottom: '10px' }} />
+                  src="https://www.keralarealestate.com/image/lg/property/property/2019/02/04/104136690/images/untitled-13.jpg" alt="Property 3" style={{ maxWidth: '100%', maxHeight: '300px', marginBottom: '10px' }} />
                 <p className="legend bg-success" style={{ width: '200px', marginTop: '5px', fontSize: '14px' }}>Flat/Apartment</p>
               </div>
               <div>
                 <img
-                  src="https://pbs.twimg.com/media/ExdzLZeVIAQrGSa?format=jpg&name=900x900"alt="Property 4"style={{ maxWidth: '100%', maxHeight: '300px', marginBottom: '10px' }}/>
+                  src="https://www.skylinebuilders.com/uploads/media/Ranch-Web-Banner-016397f941a9ca163be709d7b681.webp"alt="Property 4"style={{ maxWidth: '100%', maxHeight: '300px', marginBottom: '10px' }}/>
                 <p className="legend bg-success" style={{ width: '200px', marginTop: '5px', fontSize: '14px' }}>Independent house/Villa</p>
               </div>
             </Carousel>

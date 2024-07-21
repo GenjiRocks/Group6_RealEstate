@@ -1,0 +1,22 @@
+.testimonial-item {
+  background-color: #18bc9c;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1px;
+  max-width: 600px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.testimonial-message {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: azure;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  font-weight: bold;
+  color: azure;
+}
