@@ -5,6 +5,8 @@ import {faCheck, faLocationDot, faPaperPlane, faPhone} from '@fortawesome/free-s
 import { Collapse } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
+import Header from '../Components/Header'
+import Footer from '../Components/Footer';
 
 function Pro_details() {
   // FUNCTION FOR IMAGE SLIDER
