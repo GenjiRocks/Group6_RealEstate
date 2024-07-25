@@ -17,7 +17,7 @@ function Header() {
                 width="35"
                 height="35"
                 className="me-2"
-                src="/public/house.png"
+                src="/house.png"
                 alt=""
               />
               HomeFinder
